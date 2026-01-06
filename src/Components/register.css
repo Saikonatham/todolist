@@ -1,0 +1,70 @@
+/* Full page layout */
+.register-page {
+  height: 100vh;
+  background: #eef1f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Registration box */
+.register-box {
+  background: white;
+  width: 380px;
+  padding: 35px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.register-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Labels */
+.register-box label {
+  font-weight: 600;
+  margin-top: 10px;
+  color: #444;
+}
+
+/* Inputs */
+.register-box input {
+  padding: 10px 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.register-box input:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 0 2px rgba(78,115,223,0.2);
+}
+
+/* Button */
+.register-btn {
+  margin-top: 25px;
+  padding: 12px;
+  background: #1cc88a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.register-btn:hover {
+  background: #17a673;
+}
