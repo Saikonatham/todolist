@@ -15,11 +15,11 @@ function Register() {
 
         let fetchdata = async () => {
             try {
-                let response = await fetch(`http://localhost:3001/users?email=${email}`);
+                let response = await fetch(`https://todolist-7895.onrender.com/users?email=${email}`);
                 let jsonres = await response.json();
 
                 if (jsonres.length === 0) {
-                    let res = await fetch("http://localhost:3001/users", {
+                    let res = await fetch("https://todolist-7895.onrender.com/users", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify(new_user)

@@ -12,7 +12,7 @@ function Login() {
 
         let fetchdata = async () => {
             try {
-                let response = await fetch(`http://localhost:3001/users?email=${email}`);
+                let response = await fetch(`https://todolist-7895.onrender.com/users?email=${email}`);
                 let jsondata = await response.json();
 
                 if (jsondata.length === 0) {

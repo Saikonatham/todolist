@@ -10,7 +10,7 @@ function Pending() {
         const fetched = async () => {
             try {
                 let res = await fetch(
-                    `http://localhost:3001/todolist/?is_completed=${false}&user_id=${login_details.id}`
+                    `https://todolist-7895.onrender.com/todolist/?is_completed=${false}&user_id=${login_details.id}`
                 );
                 let comjson = await res.json();
                 setComplete(comjson);

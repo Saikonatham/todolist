@@ -25,7 +25,7 @@ function Home() {
 
   const delbtn = (id) => {
     const fetching = async () => {
-      let res = await fetch(`http://localhost:3001/todolist/${id}`, {
+      let res = await fetch(`https://todolist-7895.onrender.com/todolist/${id}`, {
         method: "DELETE",
       });
       console.log("Deleted successfully");
@@ -35,10 +35,10 @@ function Home() {
 
   const updatebtn = (id) => {
     const upfetch = async () => {
-      let res = await fetch(`http://localhost:3001/todolist/${id}`);
+      let res = await fetch(`https://todolist-7895.onrender.com/todolist/${id}`);
       let singlejson = await res.json();
       singlejson.is_completed = !singlejson.is_completed;
-      await fetch(`http://localhost:3001/todolist/${id}`, {
+      await fetch(`https://todolist-7895.onrender.com/todolist/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
