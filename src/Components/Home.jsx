@@ -12,7 +12,7 @@ function Home() {
     const fetchdata = async () => {
       try {
         let res = await fetch(
-          `http://localhost:3001/todolist/?user_id=${login_user.id}`
+          `https://todolist-7895.onrender.com/todolist/?user_id=${login_user.id}`
         );
         let jsondata = await res.json();
         setAddtodo(jsondata);
