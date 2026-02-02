@@ -7,7 +7,7 @@ function Addtodo(){
         let user = localStorage.getItem("user_details")
         const fetchdata = async()=>{
              
-            let res = await fetch("http://localhost:3001/todolist",{
+            let res = await fetch("https://todolist-7895.onrender.com/todolist",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
